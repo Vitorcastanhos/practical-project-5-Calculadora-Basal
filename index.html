@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculadora de TMB</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Taxa Metabólica Basal (TMB)</h1>
+    </header>
+    <main>
+      <h2>Calcule sua Taxa de Metabolismo Basal (TMB)</h2>
+      <form id="calc-form">
+        <!-- user informations -->
+
+        <div class="user-info">
+          <div class="control-form">
+            <label class="label" for="input-one">
+              <span class="text-label">Peso</span>
+            </label>
+
+            <div class="join">
+              <input class="input" id="input-one" placeholder="0" min="0" type="number" required />
+              <!-- <span class="join-input">Kg</span> -->
+            </div>
+
+            <label class="label" for="input-two">
+              <span class="text-label">Altura</span>
+            </label>
+
+            <div class="join">
+              <input class="input" id="input-two" placeholder="0" min="0" type="number" step="0.01" inputmode="decimal" required />
+              <!-- <span class="join-input">Mts</span> -->
+            </div>
+
+            <label class="label" for="input-three">
+              <span class="text-label">Idade</span>
+            </label>
+
+            <div class="join">
+              <input class="input" id="input-three" placeholder="0" min="0" type="number" required />
+              <!-- <span class="join-input">Anos</span> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- radio input gender-->
+
+        <div class="input-gender">
+          <div class="text-label">
+            <span class="span-label">Sexo</span>
+          </div>
+
+          <div class="flex-items">
+            <input type="radio" name="sex" id="male" />
+            <label class="gender-label" for="male">Masculino</label>
+
+            <input type="radio" name="sex" id="feme" />
+            <label class="gender-label" for="feme">Feminino</label>
+          </div>
+        </div>
+
+        <!-- radio input activities -->
+
+        <div class="input-activite">
+          <div class="text-label">
+            <span class="span-label">Atividade</span>
+          </div>
+
+          <div class="activities">
+            <input type="radio" name="active" id="sedentary" required />
+            <label class="activities-label" for="sedentary">Sedentário</label>
+
+            <input type="radio" name="active" id="slightly-active" required />
+            <label class="activities-label" for="slightly-active">Levemente ativo</label>
+
+            <input type="radio" name="active" id="moderately-active" required />
+            <label class="activities-label" for="moderately-active">Moderadamente ativo</label>
+
+            <input type="radio" name="active" id="very-active" required />
+            <label class="activities-label" for="very-active">Muito ativo</label>
+          </div>
+        </div>
+
+        <!-- Fat percentage -->
+        <div class="fat-percentage">
+          <label class="label" for="fat">
+            <span class="span-label">Percentual de Gordura (Opicional)</span>
+          </label>
+
+          <div class="fat-input">
+            <input id="fat" type="number" min="0.00" placeholder="0.00" step="0.01" inputmode="decimal" required />
+          </div>
+        </div>
+
+        <!-- Button to calculate -->
+
+        <div class="btn"><button id="calcular">Calcular</button></div>
+      </form>
+      <footer>&copy;2024 Castanhos Tecnologia</footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

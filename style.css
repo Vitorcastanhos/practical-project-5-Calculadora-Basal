@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-style: "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  font-style: "Roboto", sans-serif;
+
+  background-color: rgb(80, 164, 167);
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+
+  margin-bottom: 2rem;
+}
+
+main {
+  width: 40rem;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 1);
+
+  border: none;
+  border-radius: 8px;
+
+  margin: 0 auto 2rem;
+  padding: 2rem;
+
+  background-color: rgb(240, 255, 255);
+}
+
+main h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/*--------------- user informations ----------------*/
+
+.control-form .text-label {
+  font-size: 2rem;
+}
+
+.user-info input,
+.fat-percentage input {
+  width: 100%;
+
+  font-size: 2rem;
+
+  margin: 0.5rem 0 1rem;
+  padding: 1.5rem;
+
+  border-radius: 8px;
+  border: none;
+
+  background-color: cadetblue;
+  color: aliceblue;
+}
+
+.user-info input:focus,
+.fat-percentage input:focus {
+  outline-color: rgb(20, 97, 90);
+}
+
+/*-------------- radio input gender -----------------*/
+
+.input-gender .text-label {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.input-gender .flex-items {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5rem 0.5rem;
+
+  font-size: 10rem;
+  margin-left: -4rem;
+}
+
+.input-gender .flex-items input {
+  cursor: pointer;
+}
+
+.flex-items .gender-label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+
+  margin-left: -4rem;
+
+  cursor: pointer;
+}
+
+/*----------- radio input activities ---------------- */
+
+.input-activite .text-label {
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+}
+
+.input-activite .activities-label {
+  font-size: 2rem;
+  line-height: 2.4rem;
+
+  margin-left: -4rem;
+
+  cursor: pointer;
+}
+
+.input-activite .activities {
+  display: grid;
+  grid-template-columns: 1em auto;
+
+  gap: 0.5rem 0.5rem;
+
+  font-size: 10rem;
+  margin-left: -4rem;
+}
+
+.input-activite .activities input {
+  cursor: pointer;
+}
+
+/*-------------------- fat percentage ----------------------*/
+
+.fat-percentage {
+  margin: 2rem 0;
+}
+
+.fat-percentage input {
+  margin-top: 0.5rem;
+}
+
+/*------------------- button ---------------------*/
+
+#calcular {
+  width: 100%;
+
+  font-size: 2rem;
+
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+
+  border-radius: 8px;
+  border: none;
+
+  color: aliceblue;
+  background-color: rgb(80, 99, 185);
+}
+
+#calcular:hover {
+  background-color: rgb(45, 70, 182);
+}
+
+/*------------------- footer ---------------------*/
+
+footer {
+  text-align: center;
+  margin: 2rem 0 0;
+}
