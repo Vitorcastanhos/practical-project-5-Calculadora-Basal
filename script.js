@@ -21,16 +21,16 @@ function handleSubmit(event) {
     <div class="result-content">
       <ul>
         <li>
-          Seu metabolismo basal é de <strong>${tmb}</strong>.
+          Seu metabolismo basal é de <strong>${tmb} calorias</strong>.
         </li>
         <li>
-          Para manter o seu peso você precisa consumir em média <strong>${calories}</strong>.
+          Para manter o seu peso você precisa consumir em média <strong>${calories} calorias</strong>.
         </li>
         <li>
-          Para perder peso você precisa consumir em média <strong>${loseWeight}</strong>.
+          Para perder peso você precisa consumir em média <strong>${loseWeight} calorias.</strong>
         </li>
          <li>
-          Para ganhar peso você precisa consumir em média <strong>${gainWeight}</strong>.
+          Para ganhar peso você precisa consumir em média <strong>${gainWeight} calorias</strong>.
         </li>
       </ul>
     </div>
