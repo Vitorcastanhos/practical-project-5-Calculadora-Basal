@@ -11,13 +11,13 @@
   font-style: "Roboto", sans-serif;
 
   --hue: 200;
-  --header-color: hsl(100, 100%, 100%);
-  --body-color: hsl(var(--hue), 60%, 86%);
-  --main-color: hsl(var(--hue), 28%, 55%);
+  --header-color: hsl(var(--hue), 0%, 0%);
+  --body-color: hsl(var(--hue), 15%, 60%);
+  --main-color: hsl(var(--hue), 48%, 22%);
   --input-color: hsl(var(--hue), 10%, 90%);
   --inputs-color: hsl(var(--hue), 55%, 50%);
   --btn-color: hsl(var(--hue), 59%, 29%);
-  --btn-hover-color: hsl(var(--hue), 60%, 45%);
+  --btn-hover-color: hsl(var(--hue), 80%, 60%);
 }
 
 body {
@@ -174,7 +174,10 @@ main {
 }
 
 #calcular:hover {
+  transition: 0.3s ease-in-out;
+
   background-color: var(--btn-hover-color);
+  /* opacity: 0.7; */
 }
 
 /*------------------- result ---------------------*/
