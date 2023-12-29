@@ -18,22 +18,22 @@ function handleSubmit(event) {
 
   const displayResult = `
   <h2>Aqui está seu resultado:</h2>
-        <div class="result-content">
-          <ul>
-            <li>
-              Seu metabolismo basal é de <strong>${tmb}</strong>.
-            </li>
-            <li>
-              Para manter o seu peso você precisa consumir em média <strong>${calories}</strong>.
-            </li>
-            <li>
-              Para perder peso você precisa consumir em média <strong>${loseWeight}</strong>.
-            </li>
-            <li>
-              Para ganhar peso você precisa consumir em média <strong>${gainWeight}</strong>.
-            </li>
-          </ul>
-        </div>
+    <div class="result-content">
+      <ul>
+        <li>
+          Seu metabolismo basal é de <strong>${tmb}</strong>.
+        </li>
+        <li>
+          Para manter o seu peso você precisa consumir em média <strong>${calories}</strong>.
+        </li>
+        <li>
+          Para perder peso você precisa consumir em média <strong>${loseWeight}</strong>.
+        </li>
+         <li>
+          Para ganhar peso você precisa consumir em média <strong>${gainWeight}</strong>.
+        </li>
+      </ul>
+    </div>
   `;
 
   const result = (document.getElementById("result").innerHTML = displayResult);
