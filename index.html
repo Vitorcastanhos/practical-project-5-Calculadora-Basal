@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="./assets/calculator-svgrepo-com.svg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="shortcut icon" href="./assets/calculator-svgrepo-com.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <title>Calculadora de Taxa Basal</title>
   </head>
@@ -26,7 +26,7 @@
             </label>
 
             <div class="join">
-              <input class="input" id="input-one" placeholder="0" min="0" type="number" required />
+              <input class="input" id="weight" placeholder="0" min="0" type="number" required />
               <!-- <span class="join-input">Kg</span> -->
             </div>
 
@@ -35,7 +35,7 @@
             </label>
 
             <div class="join">
-              <input class="input" id="input-two" placeholder="0" min="0" type="number" step="0.01" inputmode="decimal" required />
+              <input class="input" id="height" placeholder="0" min="0" type="number" step="0.01" inputmode="decimal" required />
               <!-- <span class="join-input">Mts</span> -->
             </div>
 
@@ -44,7 +44,7 @@
             </label>
 
             <div class="join">
-              <input class="input" id="input-three" placeholder="0" min="0" type="number" required />
+              <input class="input" id="age" placeholder="0" min="0" type="number" required />
               <!-- <span class="join-input">Anos</span> -->
             </div>
           </div>
@@ -57,12 +57,12 @@
             <span class="span-label">Sexo</span>
           </div>
 
-          <div class="flex-items">
-            <input type="radio" name="sex" id="male" />
+          <div class="gender-options">
+            <input value="male" type="radio" name="gender" id="male" />
             <label class="gender-label" for="male">Masculino</label>
 
-            <input type="radio" name="sex" id="feme" />
-            <label class="gender-label" for="feme">Feminino</label>
+            <input value="female" type="radio" name="gender" id="female" />
+            <label class="gender-label" for="female">Feminino</label>
           </div>
         </div>
 
@@ -74,17 +74,20 @@
           </div>
 
           <div class="activities">
-            <input type="radio" name="active" id="sedentary" required />
+            <input value="1.2" type="radio" name="active" id="sedentary" required />
             <label class="activities-label" for="sedentary">Sedentário</label>
 
-            <input type="radio" name="active" id="slightly-active" required />
+            <input value="1.375" type="radio" name="active" id="slightly-active" required />
             <label class="activities-label" for="slightly-active">Levemente ativo</label>
 
-            <input type="radio" name="active" id="moderately-active" required />
+            <input value="1.55" type="radio" name="active" id="moderately-active" required />
             <label class="activities-label" for="moderately-active">Moderadamente ativo</label>
 
-            <input type="radio" name="active" id="very-active" required />
+            <input value="1.725" type="radio" name="active" id="very-active" required />
             <label class="activities-label" for="very-active">Muito ativo</label>
+
+            <input value="1.9" type="radio" name="active" id="extremely-active" required />
+            <label class="activities-label" for="extremely-active">Extremamente ativo</label>
           </div>
         </div>
 
@@ -101,8 +104,13 @@
 
         <!-- Button to calculate -->
 
-        <div class="btn"><button id="calcular">Calcular</button></div>
+        <div class="btn">
+          <button type="submit" id="calcular">Calcular</button>
+        </div>
       </form>
+
+      <div class="result-container" id="result">
+      </div>
       <footer>&copy;2024 Castanhos Tecnologia</footer>
     </main>
     <script src="./script.js"></script>
