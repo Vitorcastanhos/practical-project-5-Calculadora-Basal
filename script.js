@@ -1,5 +1,10 @@
 const form = document.getElementById("calc-form");
 form.addEventListener("submit", handleSubmit);
+form.addEventListener("submit", handleReset);
+
+function handleReset() {
+  form.reset();
+}
 
 function handleSubmit(event) {
   event.preventDefault();
