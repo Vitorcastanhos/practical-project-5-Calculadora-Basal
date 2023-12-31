@@ -15,33 +15,37 @@
       <h1>Calculadora de Taxa Metabólica Basal (TMB)</h1>
     </header>
     <main>
-      <form id="calc-form">
+      <form class="calc-form" id="calc-form">
         <!-- user informations -->
 
         <div class="user-info">
           <label class="label" for="weight">
-            <span class="text-label">Peso</span>
+            <span class="text-label"
+              >Peso
+              <small></small>
+            </span>
           </label>
+          <input class="weight" id="weight" placeholder="Quilos" min="0" type="text" maxlength="2" required />
 
-          <div class="join">
-            <input class="input" id="weight" placeholder="0" min="0" type="number" required />
-          </div>
+          <!--  -->
 
           <label class="label" for="height">
-            <span class="text-label">Altura</span>
+            <span class="text-label"
+              >Altura
+              <small></small>
+            </span>
           </label>
+          <input class="height" id="height" placeholder="Metros" min="0" type="text" maxlength="3" required />
 
-          <div class="join">
-            <input class="input" id="height" placeholder="0" min="0" type="number" required />
-          </div>
+          <!--  -->
 
           <label class="label" for="age">
-            <span class="text-label">Idade</span>
+            <span class="text-label"
+              >Idade
+              <small></small>
+            </span>
           </label>
-
-          <div class="join">
-            <input class="input" id="age" placeholder="0" min="0" type="number" required />
-          </div>
+          <input class="age" id="age" placeholder="Anos" min="0" type="text" maxlength="2" required />
         </div>
 
         <!-- radio input gender-->
@@ -95,6 +99,6 @@
 
       <footer>&copy;2024 Castanhos Tecnologia</footer>
     </main>
-    <script src="./script.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
